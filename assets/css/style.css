@@ -31,14 +31,6 @@ a:hover {
   background-color: pink;
 }
 
-a:focus {
-  background-color: red;
-}
-
-a:active {
-  background-color: purple;
-}
-
 p {
   margin: 0 0 0 0;
   font-family: 'Muli', sans-serif;
@@ -95,18 +87,19 @@ footer {
 
 .flexparentproject {
   background-color: white;
-  padding: 10px;
+  padding: 20px;
   float: left;
-  width: 65%;
+  width: 70%;
   flex-wrap: wrap;
   /*margin: 0;*/
-  margin-right: 10px;
+  margin-right: 30px;
+  margin-bottom: 30px;
   display: flex;
 }
 
 .mainContent {
   width: 70%;
-  margin-right: 30px;
+  margin: 0 30px 30px 0;
 }
 
 .content {
@@ -131,4 +124,63 @@ footer {
 
 .socialMediaImg {
   width: 40%;
+}
+
+@media screen  and (max-width: 980px){
+  #profilepic {
+    width: inherit;
+    margin: auto;
+    float: none;
+  }
+}
+
+@media screen  and (max-width: 768px){
+
+  #profilepic {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    display: block;
+    width: 400px;
+  }
+
+  .mainContent {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .connect {
+    width: auto;
+  }
+
+  .socialMediaImg {
+    width: 20%;
+  }
+
+  .flexparent {
+    flex-direction: column;
+  }
+
+  footer {
+    margin-top: 30px;
+    position: static;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+   nav {
+     float: none;
+     text-align: center;
+   }
 }
